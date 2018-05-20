@@ -59,7 +59,7 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 ## 2.6 Logging in 
 - auth.go loginHandler 수정
 	- gomiauth.Provider 함수
-	- GetBeginAuthURL(state. option)
+	- GetBeginAuthURL(state, option)
 
 - tip: 자동 리빌드 -> pilu/fresh 및 codegangsta/gin 참고
 
@@ -91,7 +91,7 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 
 ## 기타
 - [Golang oauth2 사용법](https://mingrammer.com/getting-started-with-oauth2-in-go/)
-- [Golang 공식레포](https://github.com/golang/oauth2)
+- [Golang oauth2 공식레포](https://github.com/golang/oauth2)
 	- Test case 살펴보기
 - Go dependency management
 	- `vendor`: 프로젝트 폴더별로 vendor 를 두고 project를 격리시키는 방법
