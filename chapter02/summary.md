@@ -98,7 +98,7 @@ func loginHandler(w http.ResponseWriter, r *http.Request) {
 	- [glide](http://glide.sh/): github star 6600개
 		- ruby 의 gem/bundler와 비슷
 		- yaml 파일로 vendor 폴더 관리
-	- [godep](https://github.com/tools/godep)
+	- ~~[godep](https://github.com/tools/godep)~~ [dep](https://github.com/golang/dep)
 		- 궁극적으로는 이거 사용하는게 추천되는 듯 (golang 개발팀이 밀고 있다)
 		- github start 5300
 		- 언제가는 official로 지정될 분위기, 하지만 아직까지는 glide가 완성도는 높다.
