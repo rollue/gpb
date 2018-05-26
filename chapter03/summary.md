@@ -1,6 +1,6 @@
 # Chapter3. Three Ways to Implement Profile picture
 * 소셜서비스(OAuth2)에서 제공하는 사진 사용
-* [gravatar](https://en.gravatar.com/)  웹 서비스를 사용하여 사용자의 전자 메일 주소로 사진 사용
+* [gravatar](https://ko.gravatar.com/)  웹 서비스를 사용하여 사용자의 전자 메일 주소로 사진 사용
 * 유저가 자신의 사진을 업로드하고 사용
 ## Uploading an avatar picture
 - upload.html 통해 이미지 전송
