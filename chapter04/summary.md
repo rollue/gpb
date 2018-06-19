@@ -32,6 +32,11 @@ Chapter 04. Command-Line Tools to Find Domain Names
         * confabapp
         * goconfabulation
         * schmooze time
+    * 특이사항
+        * crypto/rand: safe random number generation
+        * `echo "chat" | ./sprinkle`: 파이프라인 사용법
+        * refactoring: transformation은 일종의 데이터로 코드 밖으로 분리하는 것이 좋다.
+                       예) io/ioutil 사용하여 파일로부터 읽는다.
 3. coolify
     * 입력된 단어에 존재하는 모음에 대하여 갯수를 늘리거나 지워주는 프로그램
     * 결과값
@@ -46,10 +51,15 @@ Chapter 04. Command-Line Tools to Find Domain Names
         * confabaapp.com
         * goconfabulatioon.net
         * schmoooze-time.com
+    * 특이사항
+        * rune: string을 range 돌리면, index와 rune(=int32) 값을 얻을 수 있는데, rune값은 각각의 character를 의미함
+        * TODO: flag로 TLDs list 받기 -> flag.Var 및 flag.Parse 사용
 5. available
     * 입력된 도메인 이름에 대하여 WHOIS Server를 통해 해당 도메인이 존재하는지를 확인하는 프로그램
     * raw TCP 방식으로 com.whois-servers.net의 port 43번에 접근하여 결과값을 받아옴
         * Golang의 net 패키지에서 제공하는 TCP 함수인 ``func Dial(network, address string)(Conn, error)`` 사용
+    * 특이사항
+        * Golang은 utf-8 호환성이 좋아서, 특수 문자를 쓰는 경우 웹에서 긇어서 코드로 가져오는게 좋다.
 
 ### domainFinder 프로그램 실행 결과
 
