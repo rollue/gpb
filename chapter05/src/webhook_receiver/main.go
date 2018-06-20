@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	api := slack.New("xoxb-297980043237-2tFWdlp6KrJvB0qzZxO15BCV")
+	api := slack.New("add slack rtm api key")
 
 	messages := make(chan string, 10)
 
