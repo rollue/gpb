@@ -1,4 +1,4 @@
-# Chap5. Building Distributed Systems and Working with Flexible Data 
+# Chap5. Building Distributed Systems and Working with Flexible Data
 
 * 스터디 진행자 : 배주웅
 * 스터디 진행일 : 2018/06/??
@@ -17,7 +17,7 @@
 
 * 트위터 streaming API를 이용하여 정보 긁어오기
 
-  
+
 
 ### 문제점
 
@@ -38,7 +38,7 @@
 
 ### Server structure
 
-![](/Users/baejuung/development/go/study/chap5/assets/struct.jpg)
+![](./assets/struct.jpg)
 
 
 
@@ -111,9 +111,9 @@ func balancer(messages chan string) {
 	for i := 0; i < 4; i++ {
 		go messenger(i, chans[i])
 	}
-    
+
     current := 0
-    
+
 	for text := range messages {
 		current = (current + 1) % 4
 
@@ -141,7 +141,7 @@ func messenger(id int, value chan string) {
 
 
 
-사실 후술할 RabbitMQ에서 다 지원하는 기능이긴 하지만, 그냥 짜 보았다. 
+사실 후술할 RabbitMQ에서 다 지원하는 기능이긴 하지만, 그냥 짜 보았다.
 
 ![P-Exchange-Queue-C 여러개 그림](https://camo.githubusercontent.com/e0cb0f73a6d2041d2220710bb6c6551c0f0b9de2/687474703a2f2f676a63686f692e6769746875622e696f2f696d616765732f7261626269746d71312f70726566657463682d636f756e742e706e67)
 
@@ -153,7 +153,7 @@ func messenger(id int, value chan string) {
 
 https://stackshare.io/stackups/kafka-vs-nsq-vs-rabbitmq
 
-golang이란 거 빼고 장점이 없어보여서 많은 star를 가지고 많이 사용하는 [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-go.html) 쓰기로 했음. 
+golang이란 거 빼고 장점이 없어보여서 많은 star를 가지고 많이 사용하는 [RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-go.html) 쓰기로 했음.
 
 
 
