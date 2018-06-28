@@ -155,7 +155,7 @@ func (s *Server) handlePollsPost(w http.ResponseWriter, r *http.Request) {
 ```
 
 ### Responding
-> [decode, encode, error helper](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
+> [decode, encode, error helper](https://github.com/mhoonjeon/gpb/blob/master/chapter06/respond.go)
 ```go
 func decodeBody(r *http.Request, v interface{}) error { ... }
 func encodeBody(w http.ResponseWriter, r *http.Request, v interface{}) error { ... }
