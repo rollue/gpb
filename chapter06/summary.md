@@ -195,3 +195,5 @@ type poll struct {
 	APIKey  string         `json:"apikey"`
 }
 ```
+
+JSONP: Cross-origin policy 에 상관없이 데이터를 주고 받을 수 있다.
