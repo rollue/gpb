@@ -3,6 +3,7 @@
 1. Google Places API를 활용한 API endpoint 설계
 2. Agile 개발:
 	1. 먼저 user story를 도출해 낸 후, 이를 위한 개발 시작 
+    2. agile의 핵심: module간의 dependency를 줄여서 `회귀오류`를 줄이는 것
 3. Frontend, Backend가 만나는 API endpoint를 도출해 병렬적 작업 가능케 한다.
 4. 초기에는 코드에 데이터를 하드 코딩했다
 	1. 개발시작 단계에서 DB 조사/학습에 대한 부담을 덜기 위해
@@ -82,6 +83,7 @@ func (j j) Public() interface{} {
 	}
 }
 ```
+* json 표현을 위해 tag를 사용해도 되지만, Public() method를 사용하는 방법이 더 expressive하고 clear할 수 있다.
 
 
 ## Generating random recommendations
